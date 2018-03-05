@@ -1,9 +1,11 @@
 import React from 'react';
 
 const Header = (props) => (
-  <div>
-    <h2> {props.title} </h2>
-     {props.subTitle && <h3> {props.subTitle}</h3> }
+  <div className="header">
+    <div className="container">
+      <h2 className="header__title"> {props.title} </h2>
+      {props.subTitle && <h3 className="header__subtitle"> {props.subTitle}</h3> }
+    </div>
   </div>
  );
   

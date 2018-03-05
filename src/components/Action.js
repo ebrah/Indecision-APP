@@ -3,14 +3,14 @@ import React from 'react';
 
 const Action = (props) => (
   <div>
-   <button 
-    onClick={props.handleToDo}
-    disabled = {!props.HasOptions}
-   > 
-    What should I do ? 
-   </button>
-   <button onClick={props.handleRemove}> Remove all </button>
-   </div>
+    <button 
+       className="big-button"
+       onClick={props.WhatToDo}
+       disabled={props.isEnabled}
+     > 
+     What should I do ?  
+    </button>
+  </div>
  );
 
-  export default Action;
+export default Action;
